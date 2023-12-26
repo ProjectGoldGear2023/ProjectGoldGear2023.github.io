@@ -10,20 +10,45 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body id="main-body">
+<body id="main-body" onscroll="controllScrollHint()">
     <header>
         <video id="main-video" class="main-video fullscreen-video" autoplay loop muted>
             <source src="./assets/videos/main-video.mp4" type="video/mp4">
         </video>
-        <img id="logo" src="assets/images/logo.png" alt="logo" width="600px">
+        <img id="logo" src="assets/images/logo.webp" alt="logo">
         <button id="more-info-button"
             onclick="navigateTo('https://www.youtube.com/watch?v=khplMpm4ctc&list=RDkrRNjUJIfFk&index=4')">VER
-            TRAILER_</i>
+            EL TRAILER_</i>
         </button>
+        <span class="scroll-hint">
+            <span class="animated-scroll-hint"></span>
+        </span>
     </header>
 
+    <main>
+        <article id="preOrder">
+            <section>
+                <h1>¡RESERVA AHORA!</h1>
+                <button
+                    onclick="navigateTo('https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/')">HAZ
+                    CLICK AQUÍ</button>
+            </section>
+        </article>
+        <article>
+
+        </article>
+    </main>
+
+    <footer>
+
+    </footer>
+
     <!-- SCRIPTS SECTION -->
-    <script src="https://unpkg.com/@swup/scroll-plugin@3"></script> <!-- https://swup.js.org/plugins/scroll-plugin/ -->
+    <script type='text/javascript'
+        src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
 </body>
 

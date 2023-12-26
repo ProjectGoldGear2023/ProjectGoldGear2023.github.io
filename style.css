@@ -1,0 +1,183 @@
+/* ITC Avant Garde Gothic Pro Medium */
+@font-face {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_Medium';
+    src: url('./assets/fonts/ITC_Avant_Garde_Gothic_PRO_Font_Family/ITC_Avant_Garde_Gothic_Pro-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ITC Avant Garde Gothic Pro Book */
+@font-face {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_Book';
+    src: url('./assets/fonts/ITC_Avant_Garde_Gothic_PRO_Font_Family/ITC_Avant_Garde_Gothic_Pro-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ITC Avant Garde Gothic Pro Book */
+@font-face {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt';
+    src: url('./assets/fonts/ITC_Avant_Garde_Gothic_PRO_Font_Family/ITC_Avant_Garde_Gothic_Pro-XLt.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 0;
+}
+
+.fullscreen-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#logo {
+    width: 550px;
+    right: 60px;
+    top: 60px;
+    position: absolute;
+}
+
+#more-info-button {
+    cursor: pointer;
+    height: 160px;
+    width: 100vw;
+    background: linear-gradient(to right, #FFE9F4, #FFB8D9);
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: white;
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt' !important;
+    letter-spacing: 2px;
+    transition: font-size 0.5s;
+
+}
+
+#more-info-button:hover {
+    font-size: 2.7rem;
+}
+
+.scroll-hint {
+    width: 4px;
+    height: 80px;
+    left: calc(50% - 4px);
+    position: fixed;
+    z-index: 100;
+    bottom: 5px;
+    background-color: rgba(221, 221, 221, 0.699);
+    border-radius: 10px;
+}
+
+.animated-scroll-hint {
+    width: 4px;
+    height: 15px;
+    left: calc(50% - 4px);
+    position: fixed;
+    z-index: 100;
+    bottom: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    animation-name: scroll-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll-animation {
+    from {
+        bottom: 5px;
+    }
+
+    to {
+        bottom: 70px;
+    }
+}
+
+#preOrder {
+    background-color: white;
+    height: max-content;
+    overflow: auto;
+}
+
+#preOrder h1 {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_Book' !important;
+    letter-spacing: 2px;
+    font-size: 8rem;
+    color: #E52271;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+#preOrder button {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt' !important;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: white;
+    background: linear-gradient(to right, #F14695, #E52271);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 128px;
+    display: block;
+    padding: 25px 45px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: font-size 0.5s;
+}
+
+@media only screen and (max-device-width: 605px) {
+    #logo {
+        width: 350px;
+        right: 6vw;
+        position: absolute;
+    }
+
+    #more-info-button {
+        font-size: 2rem;
+    }
+
+    #preOrder h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-device-width: 355px) {
+    #logo {
+        width: 200px;
+        right: 15vw;
+        position: absolute;
+    }
+
+    #more-info-button {
+        font-size: 1.5rem;
+    }
+
+    #preOrder h1 {
+        font-size: 3.5rem;
+    }
+
+    #preOrder button {
+        font-size: 1rem;
+    }
+}
