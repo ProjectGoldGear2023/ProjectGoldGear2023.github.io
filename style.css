@@ -38,7 +38,7 @@
     font-style: normal;
 }
 
-*{
+* {
     font-family: 'ITC_Avant_Garde_Gothic_Std_Extra_Light';
 }
 
@@ -165,63 +165,77 @@ header {
     transition: font-size 0.5s;
 }
 
-#slider-footer{
+#slider-footer {
     background: linear-gradient(to bottom, #F14695, #E52271);
 }
 
-footer{
+footer {
     padding: 150px 0;
     width: 85%;
     display: block;
     margin: auto;
 }
 
-footer h2{
+footer h2 {
     margin-top: 0;
     font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt';
     color: white;
 }
 
-footer table{
+footer table {
     font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt';
     color: white;
     width: 110%;
     border-spacing: 0 10px;
 }
 
-td:first-of-type{
+td:first-of-type {
     width: 33%;
 }
 
-td:last-of-type{
+td:last-of-type {
     width: 77%;
 }
 
-.top-footer{
-    margin-bottom: 45px;
+.top-footer {
+    margin-bottom: 35px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.social-media{
+.social-media {
     margin: 5px;
     cursor: pointer;
 }
 
-.social-media:first-of-type{
+.social-media:first-of-type {
     margin: 5px 5px 5px 0px;
 }
 
-.horizontal-list{
+.company-logo {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 75px;
+    cursor: pointer;
+}
+
+.horizontal-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
 }
 
-.horizontal-list img{
+.d-none {
+    display: none;
+}
+
+.horizontal-list img {
     margin: 20px 20px;
 }
 
-.horizontal-list img:first-of-type{
+.horizontal-list img:first-of-type {
     margin: 20px 20px 20px 0px;
 }
 
