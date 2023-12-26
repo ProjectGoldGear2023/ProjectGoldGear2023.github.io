@@ -14,12 +14,32 @@
     font-style: normal;
 }
 
-/* ITC Avant Garde Gothic Pro Book */
+/* ITC Avant Garde Gothic Pro XLt */
 @font-face {
     font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt';
     src: url('./assets/fonts/ITC_Avant_Garde_Gothic_PRO_Font_Family/ITC_Avant_Garde_Gothic_Pro-XLt.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+
+/* ITC Avant Garde Gothic Std Extra Light */
+@font-face {
+    font-family: 'ITC_Avant_Garde_Gothic_Std_Extra_Light';
+    src: url('./assets/fonts/ITC_Avant_Garde_Gothic_Std/ITC_Avant_Garde_Gothic_Std_Extra_Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ITC Avant Garde Gothic Std Medium */
+@font-face {
+    font-family: 'ITC_Avant_Garde_Gothic_Std_Medium';
+    src: url('./assets/fonts/ITC_Avant_Garde_Gothic_Std/ITC_Avant_Garde_Gothic_Std_Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'ITC_Avant_Garde_Gothic_Std_Extra_Light';
 }
 
 html {
@@ -52,7 +72,6 @@ header {
 }
 
 #logo {
-    width: 550px;
     right: 60px;
     top: 60px;
     position: absolute;
@@ -68,7 +87,7 @@ header {
     padding: 0;
     font-size: 3rem;
     color: white;
-    font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt' !important;
+    font-family: 'ITC_Avant_Garde_Gothic_Std_Extra_Light' !important;
     letter-spacing: 2px;
     transition: font-size 0.5s;
 
@@ -144,6 +163,66 @@ header {
     border-radius: 50px;
     cursor: pointer;
     transition: font-size 0.5s;
+}
+
+#slider-footer{
+    background: linear-gradient(to bottom, #F14695, #E52271);
+}
+
+footer{
+    padding: 150px 0;
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+footer h2{
+    margin-top: 0;
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt';
+    color: white;
+}
+
+footer table{
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt';
+    color: white;
+    width: 110%;
+    border-spacing: 0 10px;
+}
+
+td:first-of-type{
+    width: 33%;
+}
+
+td:last-of-type{
+    width: 77%;
+}
+
+.top-footer{
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.social-media:first-of-type{
+    margin: 5px 5px 5px 0px;
+}
+
+.horizontal-list{
+    display: flex;
+    justify-content: start;
+}
+
+.horizontal-list img{
+    margin: 20px 20px;
+}
+
+.horizontal-list img:first-of-type{
+    margin: 20px 20px 20px 0px;
 }
 
 @media only screen and (max-device-width: 605px) {
