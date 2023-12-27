@@ -43,6 +43,10 @@ function navigateTo(url) {
     window.location.href = url;
 }
 
+function openTab(url) {
+    window.open(url, "_blank");
+}
+
 // WAIT METHODS
 $.wait = function (callback, seconds) {
     return window.setTimeout(callback, seconds * 1000);
