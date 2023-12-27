@@ -1,7 +1,6 @@
 let isScrollHintVisible = true;
 
 function changeImage(element) {
-    console.log(element.src)
     if (element.src.includes('red_canvas')) {
         element.style.height = '120px';
         element.src = './assets/images/Picuezo_Studios_old.webp'
@@ -15,11 +14,27 @@ function changeImage(element) {
 }
 
 // SCROLL METHODS
+function scrollController() {
+    controllScrollHint();
+    animationsAtSpecificScroll();
+}
+
 function controllScrollHint() {
     if (window.scrollY >= 100 && isScrollHintVisible === true) {
         $.wait(function () { $(".scroll-hint").fadeOut("slow"); isScrollHintVisible = false }, .5);
     } else if (window.scrollY < 100 && isScrollHintVisible === false) {
         $.wait(function () { $(".scroll-hint").fadeIn("slow"); isScrollHintVisible = true }, .2);
+    }
+}
+
+function animationsAtSpecificScroll() {
+    console.log(window.scrollY);
+    if (window.scrollY >= 500) {
+        $("#preOrder h1").addClass('preorderTitleAnimation');
+        $("#preOrder h1 span").addClass('span-run');
+    }
+    if (window.scrollY >= 750) {
+        $("#preOrder button").addClass('fadeInAnimation');
     }
 }
 

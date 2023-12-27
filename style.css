@@ -146,7 +146,147 @@ header {
     color: #E52271;
     text-align: center;
     margin-bottom: 64px;
+    transform: translateY(100px) scale(0.7);
 }
+
+#preOrder h1 span {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_Book' !important;
+    opacity: 0;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+}
+
+.span-run:nth-child(1) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(1 * 40ms);
+}
+
+.span-run:nth-child(2) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(2 * 40ms);
+}
+
+.span-run:nth-child(3) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(3 * 40ms);
+}
+
+.span-run:nth-child(4) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(4 * 40ms);
+}
+
+.span-run:nth-child(5) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(5 * 40ms);
+}
+
+.span-run:nth-child(6) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(6 * 40ms);
+}
+
+.span-run:nth-child(7) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(7 * 40ms);
+}
+
+.span-run:nth-child(8) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(8 * 40ms);
+}
+
+.span-run:nth-child(9) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(9 * 40ms);
+}
+
+.span-run:nth-child(10) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(10 * 40ms);
+}
+
+.span-run:nth-child(11) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(11 * 40ms);
+}
+
+.span-run:nth-child(12) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(12 * 40ms);
+}
+
+.span-run:nth-child(13) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(13 * 40ms);
+}
+
+.span-run:nth-child(14) {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition-delay: calc(1 * 40ms);
+    transition-delay: calc(14 * 40ms);
+}
+
+.preorderTitleAnimation {
+    -webkit-animation: preorderTitleAnim 1.5s ease-in-out both;
+    animation: preorderTitleAnim 1.5s ease-in-out both;
+}
+
+@keyframes preorderTitleAnim {
+    0% {
+        transform: translateY(100px) scale(0.7);
+    }
+
+    45% {
+        transform: translateY(100px) scale(0.7);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
 
 #preOrder button {
     font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt' !important;
@@ -162,7 +302,22 @@ header {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: font-size 0.5s;
+}
+
+.fadeInAnimation {
+    -webkit-animation: fadeInAnim 1s ease both;
+    animation: fadeInAnim 1s ease both;
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 #slider-footer {
@@ -229,6 +384,10 @@ td:last-of-type {
 
 .d-none {
     display: none;
+}
+
+.hide {
+    opacity: 0;
 }
 
 .horizontal-list img {
