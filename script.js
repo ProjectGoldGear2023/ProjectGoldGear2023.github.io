@@ -5,7 +5,7 @@ function changeImage(element) {
     if (element.src.includes('red_canvas')) {
         element.style.height = '120px';
         element.src = './assets/images/Picuezo_Studios_old.webp'
-    } else if (element.src.includes('old')) {
+    } else if (element.src.includes('_old')) {
         element.style.height = '100px';
         element.src = './assets/images/Picuezo_Studios_new.webp'
     } else {
