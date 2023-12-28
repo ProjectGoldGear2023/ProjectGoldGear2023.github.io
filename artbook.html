@@ -9,15 +9,18 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <style>
-        embed {
+        #pdf {
             width: 100vw;
             height: 100vh;
+            border: none;
         }
     </style>
 </head>
 
 <body>
-    <embed id="pdf" src="./assets/documents/artbook.pdf#toolbar=0" type="application/pdf">
+    <iframe id="pdf" src="./assets/documents/artbook.pdf#toolbar=0" type="application/pdf" scrolling="no"
+        frameborder="0" seamless="seamless">
+    </iframe>
 </body>
 
 </html>
