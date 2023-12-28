@@ -20,9 +20,10 @@ function scrollController() {
 }
 
 function controllScrollHint() {
-    if (window.scrollY >= 100 && isScrollHintVisible === true) {
+    console.log($("#pdf").scrollY)
+    if ((window.scrollY >= 100 || $("#pdf").scrollY) && isScrollHintVisible === true) {
         $.wait(function () { $(".scroll-hint").fadeOut("slow"); isScrollHintVisible = false }, .5);
-    } else if (window.scrollY < 100 && isScrollHintVisible === false) {
+    } else if ((window.scrollY < 100 || $("#pdf").scrollY) && isScrollHintVisible === false) {
         $.wait(function () { $(".scroll-hint").fadeIn("slow"); isScrollHintVisible = true }, .2);
     }
 }
@@ -41,6 +42,10 @@ function animationsAtSpecificScroll() {
 // NAVIGATION METHODS
 function navigateTo(url) {
     window.location.href = url;
+}
+
+function openTab(url) {
+    window.open(url, "_blank");
 }
 
 // WAIT METHODS
