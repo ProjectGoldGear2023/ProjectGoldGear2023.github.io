@@ -21,9 +21,9 @@ function scrollController() {
 
 function controllScrollHint() {
     console.log($("#pdf").scrollY)
-    if ((window.scrollY >= 100 || $("#pdf").scrollY) && isScrollHintVisible === true) {
+    if (window.scrollY >= 100 && isScrollHintVisible === true) {
         $.wait(function () { $(".scroll-hint").fadeOut("slow"); isScrollHintVisible = false }, .5);
-    } else if ((window.scrollY < 100 || $("#pdf").scrollY) && isScrollHintVisible === false) {
+    } else if (window.scrollY < 100 && isScrollHintVisible === false) {
         $.wait(function () { $(".scroll-hint").fadeIn("slow"); isScrollHintVisible = true }, .2);
     }
 }
@@ -52,3 +52,13 @@ function openTab(url) {
 $.wait = function (callback, seconds) {
     return window.setTimeout(callback, seconds * 1000);
 }
+
+// SLIDER METHODS
+$(document).ready(function () {
+    var mySiema = new Siema({
+        selector: '#slider'
+    });
+
+    document.querySelector('.js-prev').addEventListener('click', function () { mySiema.prev() });
+    document.querySelector('.js-next').addEventListener('click', function () { mySiema.next() });
+});
