@@ -40,6 +40,7 @@
 
 * {
     font-family: 'ITC_Avant_Garde_Gothic_Std_Extra_Light';
+    user-select: none;
 }
 
 html {
