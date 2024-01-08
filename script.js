@@ -56,9 +56,43 @@ $.wait = function (callback, seconds) {
 // SLIDER METHODS
 $(document).ready(function () {
     var mySiema = new Siema({
-        selector: '#slider'
+        selector: '#slider',
+        duration: 200,
+        easing: 'ease-out',
+        perPage: {
+            800: 1,
+            1240: 1
+        },
+        startIndex: 0,
+        draggable: false,
+        loop: true,
+        onInit: () => {
+        },
+        onChange: () => {
+        },
     });
 
     document.querySelector('.js-prev').addEventListener('click', function () { mySiema.prev() });
     document.querySelector('.js-next').addEventListener('click', function () { mySiema.next() });
+});
+
+// SCREEN SIZE METHODS
+$(document).ready(function () {
+    if ($(window).width() < 1920) {
+        $('#slider-container').hide();
+        $('#gallery-container').show();
+    } else {
+        $('#slider-container').show();
+        $('#gallery-container').hide();
+    }
+});
+
+$(window).on('resize', function () {
+    if ($(window).width() < 1920) {
+        $('#slider-container').hide();
+        $('#gallery-container').show();
+    } else {
+        $('#slider-container').show();
+        $('#gallery-container').hide();
+    }
 });
