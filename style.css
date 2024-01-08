@@ -321,6 +321,29 @@ header {
     }
 }
 
+#gallery-container {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery-container div {
+    text-align: center;
+    color: white;
+}
+
+#gallery-container h1 {
+    font-family: 'ITC_Avant_Garde_Gothic_Std_Extra_Light';
+    font-weight: normal;
+    font-size: 4rem;
+}
+
+#gallery-container p {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
 #slider {
     top: 235px;
     overflow: unset !important;
@@ -350,6 +373,11 @@ header {
     padding-top: 345px;
 }
 
+.slide-container {
+    transition: opacity .2s;
+    overflow-x: clip;
+}
+
 .slide-header {
     padding-left: 35px;
 }
@@ -372,27 +400,33 @@ header {
     padding-left: 60px;
 }
 
-.slide-body>div:first-of-type {
+.slide-text {
+    width: 40%;
     padding-top: 100px;
 }
 
-.slide-body h2 {
+.slide-text h2 {
     font-family: 'ITC_Avant_Garde_Gothic_Std_Extra_Light';
     font-weight: normal;
     font-size: 4rem;
     margin-bottom: 60px;
 }
 
-.slide-body p {
+.slide-text p {
     text-align: start;
     font-size: 1.3rem;
     font-weight: normal;
     letter-spacing: normal;
 }
 
-.slide-body img {
+.slide-img {
+    width: 60%;
+}
+
+.slide-img img {
     z-index: 1111111;
     transform: translate(140px, -490px);
+    clip-path: polygon(0 0, 100% 0, 100% 87.55%, 0 97%);
 }
 
 .js-prev {
@@ -531,6 +565,21 @@ td:last-of-type {
 
     #preOrder h1 {
         font-size: 4rem;
+    }
+
+    footer table {
+        width: 106%;
+    }
+    
+    td:first-of-type {
+        width: 33%;
+    }
+    
+    td:last-of-type {
+        width: 73%;
+    }
+    footer h2{
+        margin-top: 30px;
     }
 }
 
