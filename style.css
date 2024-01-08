@@ -339,10 +339,24 @@ header {
     font-size: 4rem;
 }
 
-#gallery-container p {
+#gallery-container h2 {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt';
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 3rem;
 }
+
+#gallery-container h3 {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt';
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+#gallery-container h4 {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_XLt';
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
 
 #slider {
     top: 235px;
@@ -425,8 +439,27 @@ header {
 
 .slide-img img {
     z-index: 1111111;
+}
+
+#blanca {
     transform: translate(140px, -490px);
     clip-path: polygon(0 0, 100% 0, 100% 87.55%, 0 97%);
+}
+
+#leeliel {
+    transform: translate(0px, -520px);
+    clip-path: polygon(0 0, 100% 0, 100% 82.3%, 0 94.53%);
+}
+
+#velonica {
+    transform: translate(140px, -500px);
+    clip-path: polygon(0 0, 100% 0, 100% 81.8%, 0 91.3%);
+}
+
+#kana {
+    transform: translate(-400px, -473px);
+    clip-path: polygon(0 0, 100% 0, 100% 80.95%, 0 100%);
+
 }
 
 .js-prev {
@@ -478,7 +511,7 @@ header {
 }
 
 footer {
-    padding: 150px 0;
+    padding: 250px 0;
     width: 85%;
     display: block;
     margin: auto;
@@ -570,15 +603,16 @@ td:last-of-type {
     footer table {
         width: 106%;
     }
-    
+
     td:first-of-type {
         width: 33%;
     }
-    
+
     td:last-of-type {
         width: 73%;
     }
-    footer h2{
+
+    footer h2 {
         margin-top: 30px;
     }
 }

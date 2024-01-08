@@ -78,21 +78,21 @@ $(document).ready(function () {
 
 // SCREEN SIZE METHODS
 $(document).ready(function () {
-    if ($(window).width() < 1920) {
-        $('#slider-container').hide();
-        $('#gallery-container').show();
-    } else {
-        $('#slider-container').show();
-        $('#gallery-container').hide();
-    }
+    screenSizeMethod();
 });
 
 $(window).on('resize', function () {
-    if ($(window).width() < 1920) {
+    screenSizeMethod();
+});
+
+function screenSizeMethod() {
+    let windowWidth = $(window).width();
+    if (windowWidth != 1920) {
         $('#slider-container').hide();
+        $('#gallery-container h4').html('Current width: ' + '<b>' + windowWidth + 'px</b>');
         $('#gallery-container').show();
     } else {
         $('#slider-container').show();
         $('#gallery-container').hide();
     }
-});
+}
