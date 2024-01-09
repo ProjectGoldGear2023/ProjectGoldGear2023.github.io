@@ -154,6 +154,7 @@ header {
 #preOrder h1 span {
     font-family: 'ITC_Avant_Garde_Gothic_Pro_Book' !important;
     opacity: 0;
+    margin-right: 12px;
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
 }
@@ -508,6 +509,7 @@ header {
 }
 
 .book-icon {
+    margin-right: 10px;
     content: url('./assets/images/slider/book_icon.webp');
 }
 
