@@ -629,6 +629,24 @@ td:last-of-type {
         width: 73%;
     }
 
+    #gallery-container h1 {
+        margin-top: 10px;
+        font-size: 2.5rem;
+    }
+
+    #gallery-container h2 {
+        font-size: 2.3rem;
+    }
+
+
+    #gallery-container h3 {
+        font-size: 1.5rem;
+    }
+
+    #gallery-container h4 {
+        font-size: 1.5rem;
+    }
+
     footer h2 {
         margin-top: 30px;
     }
