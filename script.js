@@ -7,6 +7,9 @@ function changeImage(element) {
     } else if (element.src.includes('_old')) {
         element.style.height = '100px';
         element.src = './assets/images/Picuezo_Studios_new.webp'
+    } else if (element.src.includes('_new')) {
+        element.style.height = '120px';
+        element.src = './assets/images/Picuezo_Studios_latest.png'
     } else {
         element.style.height = '64px';
         element.src = './assets/images/red_canvas.webp';
